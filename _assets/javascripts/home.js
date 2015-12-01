@@ -30,7 +30,7 @@ function mobileListener(){
   $('#mobile').submit(function(event){
     event.preventDefault();
     var mobile = $('#mobile').find('[type="text"]');
-    sendData({tags:{mobile: mobile.val()}});
+    sendData({phone: mobile.val()});
     mobile.val("");
     mobile.prop('placeholder', "THANKS!");
     mobile.prop('readonly', 'readonly');
