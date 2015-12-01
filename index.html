@@ -2,22 +2,52 @@
 layout: home
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="row">
+</div>
+<div class="row">
+  <div class="col-md-4">
+  </div>
+  <div class="col-md-4">
+    {% image ref_emoji.png %}
+  </div>
+  <div class="col-md-4">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+  </div>
+  <div class="col-md-4">
+    <div class="update-text">
+      <p>We are soon releasing a brand new Refugee Emojis campaign</p>
+      <p>Sign up with your email or mobile to to stay updated!</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+  </div>
+  <div class="col-md-4">
+    <form id="email" class="form-horizontal">
+      <label class="sr-only">email</label>
+      <input type="email" placeholder="EMAIL" required></input>
+      <input type="submit" value="SEND">
+    </form>
+  </div>
+  <div class="col-md-4">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+  </div>
+  <div id="mobile" class="col-md-4">
+    <form class="form-horizontal">
+      <label class="sr-only">mobile</label>
+      <input type="text" placeholder="MOBILE" required  ></input>
+      <input type="submit" value="SEND">
+    </form>
+  </div>
+  <div class="col-md-4">
+  </div>
 </div>
