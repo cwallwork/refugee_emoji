@@ -14,3 +14,7 @@ github_username:  jekyll
 markdown: kramdown
 
 exclude: [vendor, 'Gemfile', 'Gemfile.lock', 'Readme.md']
+
+assets:
+  js_compressor: uglifier
+  css_compressor: sass
