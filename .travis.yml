@@ -2,8 +2,9 @@ language: ruby
 rvm:
 - 2.2.3
 before_script:
-- chmod +x "cibuild"
-script: "cibuild"
+- chmod +x "./script/cibuild"
+script: "./script/cibuild"
+
 install: bundle install
 env:
   global:
