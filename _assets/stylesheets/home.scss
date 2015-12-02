@@ -25,7 +25,7 @@ border-radius: 40px;
 max-width: 300px;
   & input{
     display: inline-block;
-    font-weight: 700;
+    font-weight: 600;
     background: none;
     border: none;
     width: 75%;
@@ -39,7 +39,11 @@ max-width: 300px;
       &:focus{
         outline: none;
         color: #156ab5;
-        font-weight: 800;
+        font-weight: 900;
+      }
+      &:hover{
+        color: #156ab5;
+        font-weight: 900;
       }
     }
     &:focus{
