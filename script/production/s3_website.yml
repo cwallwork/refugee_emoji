@@ -2,4 +2,5 @@ s3_id: <%= ENV['S3_ACCESS_KEY_ID'] %>
 s3_secret: <%= ENV['S3_SECRET_KEY'] %>
 s3_bucket: refugeeemojis.com
 
+cloudfront_distribution_id: E1WR25YE0B4GQZ
 s3_endpoint: us-east-1
