@@ -4,7 +4,7 @@
 
 var gw = new Groundwork({
     'api_url': 'https://api.thegroundwork.com',
-    'oauth_client_id': 'pub-un-test.refugeeemojis-test-int-l7z1l8mCLg1kZKp7YNuec4qt8j4VzoP_W8BRfuZxO8VyJhNJGLFiMXSIPeZI5lSD0MKgY_bIcokhUv4grSkKag'
+    'oauth_client_id': 'pub-un.refugeeemojis-int-ewCjbUUNNWcqXIrMycgWgI3JqsvFrXsiJw9rjrypx7XhT.3M.Cpajk_6lpj.W8N.SuVrKtwygCKVs6OLOab4hA'
   });
 
 $(document).ready(function(){
@@ -30,7 +30,7 @@ function mobileListener(){
   $('#mobile').submit(function(event){
     event.preventDefault();
     var mobile = $('#mobile').find('[type="text"]');
-    sendData({tags:{mobile: mobile.val()}});
+    sendData({phone: mobile.val()});
     mobile.val("");
     mobile.prop('placeholder', "THANKS!");
     mobile.prop('readonly', 'readonly');
